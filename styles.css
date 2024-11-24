@@ -1,1 +1,162 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --border: 1px rgb(250, 250, 250) solid;
+}
+body {
+  display: flex;
+}
+
+.main-left {
+  border: var(--border);
+  width: 30vw;
+  height: 100vh;
+  background-image: url(background/background.jpeg);
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.left-first {
+  border: var(--border);
+  width: 100%;
+  height: 120px;
+  margin-bottom: 293px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+
+  padding-left: 20px;
+}
+.odin-pic {
+  height: 90px;
+  width: 75px;
+}
+/* .odin {
+  background-color: rgb(0, 0, 0, 0.3);
+
+  display: block;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 3rem;
+} */
+
+.main-right {
+  border: var(--border);
+  width: 70vw;
+  height: 100vh;
+}
+
+.first {
+  border: var(--border);
+  width: 70vw;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgb(245, 241, 241);
+}
+
+.header1,
+.header2 {
+  font-weight: bold;
+  width: 80%;
+  padding-left: 30px;
+}
+
+.header2 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.second {
+  border: var(--border);
+  width: 70vw;
+  height: 30%;
+}
+
+.third {
+  border: var(--border);
+  width: 70vw;
+  height: 30%;
+  background-color: rgb(245, 241, 241);
+}
+
+.inputRight {
+  float: inline-end;
+}
+
+.title {
+  margin-top: 35px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rowOne {
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+input {
+  border: none;
+  border-bottom: solid rgb(101, 177, 101) 2px;
+  padding: 2px;
+}
+
+input:invalid {
+}
+
+button {
+  display: flex;
+  padding: 10px 40px;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(125, 196, 125);
+  color: white;
+}
+
+.login {
+  margin: 20px;
+}
+
+.login a {
+  text-decoration: none;
+  color: forestgreen;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(32, 54, 54);
+}
+
+input#pass:invalid + div.incorrect::after {
+  content: "Password doesnt match*";
+  font-size: 12px;
+  color: red;
+}
+
+.header1 {
+  font-size: 20px;
+}
+
+.header2 {
+  font-size: 15px;
+}
